@@ -14,6 +14,7 @@ class SplashView: UIView{
         setupUI()
     }
     private func setupUI(){
+        self.backgroundColor = .blue
         setupConstraints()
     }
     private func setupConstraints(){
