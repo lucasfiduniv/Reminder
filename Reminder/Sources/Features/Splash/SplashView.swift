@@ -9,12 +9,31 @@ import Foundation
 import UIKit
 
 class SplashView: UIView{
+    private let logoImgView:UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "Logo")
+        image.contentMode = .scaleAspectFit
+        image.translatesAutoresizingMaskIntoConstraints = false
+        return image
+    }()
+    
+    private let titleLogoLabel:UILabel = {
+        let label = UILabel()
+        label.text = "Remind"
+        label.font = UIFont.boldSystemFont(ofSize: 32)
+        label.translatesAutoresizingMaskIntoConstraints = false;
+        return label
+    }()
+    
     init(){
         super.init(frame: .zero)
         setupUI()
     }
     private func setupUI(){
-        self.backgroundColor = .blue
+        self.backgroundColor = .systemRed
+        
+        self.addSubview(logoImgView)
+        self.addSubview(titleLogoLabel)
         setupConstraints()
     }
     private func setupConstraints(){
