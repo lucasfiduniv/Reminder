@@ -13,7 +13,7 @@ class SplashViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let contentView = SplashView()
+        let _contentView = SplashView()
         setup()
     }
     private func setup(){
