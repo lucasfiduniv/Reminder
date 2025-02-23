@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class LoginBottonSheetViewController:UIViewController{
-    let loginView = LoginBottonSheetView()
+    let loginView = LoginBottomSheetView()
     var handleAreaHeight: CGFloat = 50.0
     override func viewDidLoad() {
         super.viewDidLoad()
