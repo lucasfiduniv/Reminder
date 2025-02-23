@@ -62,7 +62,7 @@ class LoginBottonSheetView:UIView{
     private func setupUI(){
         self.backgroundColor = .white
         self.layer.cornerRadius = Metrics.small
-        
+        addSubview(handleArea)
         addSubview(titleLabel)
         addSubview(emailTextField)
         addSubview(passwordTextField)
