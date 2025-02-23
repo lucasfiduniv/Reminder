@@ -13,6 +13,9 @@
 "login.password.placeholder" = "senha";
 "login.button.title" = "Entrar";
 
+"login.loginTextFieldLabel.label.title" = "Email";
+"login.passwordTextFieldLabel.label.title" = "Senha";
+
 /* MARK: - HOME Screen */
 
 
