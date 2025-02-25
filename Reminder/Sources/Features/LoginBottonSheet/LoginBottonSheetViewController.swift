@@ -11,9 +11,10 @@ import UIKit
 class LoginBottonSheetViewController:UIViewController{
     let loginView = LoginBottomSheetView()
     var handleAreaHeight: CGFloat = 50.0
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loginView.delegate = self
         setupUI()
         setupGesture()
     }
@@ -55,8 +56,8 @@ class LoginBottonSheetViewController:UIViewController{
     
 }
 extension LoginBottonSheetViewController: LoginBottomSheetViewDelegate{
-    func sendLoginData(user: String, password: String) {s
-        <#code#>
+    func sendLoginData(user: String, password: String) {
+        print(user,password)
     }
     
     
